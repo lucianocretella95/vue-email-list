@@ -13,6 +13,9 @@
       {{message}}
       <div class="containermail">
         <button @click="getmail">Genera mail</button>
+        <ul v-if="newmail.length==10">
+          <li v-for="element in newmail">{{element}}</li>
+        </ul>
       </div>
     </div>
     <script src="./js/script.js"></script>
